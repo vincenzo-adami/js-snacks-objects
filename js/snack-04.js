@@ -12,12 +12,20 @@ console.log(persone)
 
 let risultato = [];
 
-for (let i = 0; i < persone.length; i++) {
-  if (persone[i].eta < 18) {
-    risultato.push(persone[i].nome + ' ' + persone[i].cognome + ' non può ancora guidare')
+// for (let i = 0; i < persone.length; i++) {
+//   if (persone[i].eta < 18) {
+//     risultato.push(persone[i].nome + ' ' + persone[i].cognome + ' non può ancora guidare')
+//   } else {
+//     risultato.push(persone[i].nome + ' ' + persone[i].cognome + ' può guidare')
+//   }
+// }
+
+risultato = persone.map((persone) => {
+  if (persone.eta < 18) {
+    return (persone.nome + ' ' + persone.cognome + ' non può ancora guidare')
   } else {
-    risultato.push(persone[i].nome + ' ' + persone[i].cognome + ' può guidare')
+    return (persone.nome + ' ' + persone.cognome + ' può guidare')
   }
-}
+})
 
 console.log(risultato)

@@ -4,3 +4,9 @@ let animali = [
   { nome: 'gallina', famiglia: 'fasianidi', classe: 'uccelli' },
   { nome: 'coccodrillo', famiglia: 'sauropsidi', classe: 'rettili' }
 ]
+
+console.log(animali)
+
+let mammiferi = animali.filter((object) => object.classe === 'mammiferi')
+
+console.log(mammiferi)

@@ -20,11 +20,11 @@ let risultato = [];
 //   }
 // }
 
-risultato = persone.map((persone) => {
-  if (persone.eta < 18) {
-    return (persone.nome + ' ' + persone.cognome + ' non può ancora guidare')
+risultato = persone.map((el) => {
+  if (el.eta < 18) {
+    return (el.nome + ' ' + el.cognome + ' non può ancora guidare')
   }
-  return (persone.nome + ' ' + persone.cognome + ' può guidare')
+  return (el.nome + ' ' + el.cognome + ' può guidare')
 
 })
 

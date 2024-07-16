@@ -23,9 +23,9 @@ let risultato = [];
 risultato = persone.map((persone) => {
   if (persone.eta < 18) {
     return (persone.nome + ' ' + persone.cognome + ' non può ancora guidare')
-  } else {
-    return (persone.nome + ' ' + persone.cognome + ' può guidare')
   }
+  return (persone.nome + ' ' + persone.cognome + ' può guidare')
+
 })
 
 console.log(risultato)
